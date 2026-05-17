@@ -1,0 +1,187 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Solo Study Cube",
+      "description": "Your own quiet corner. A personal desk space with side dividers to keep you focused and free of distractions.",
+      "capacity": 1,
+      "price_per_session": 200,
+      "amenities": ["WiFi", "Power outlets", "Desk lamp", "AC"],
+      "image": "https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=600"
+    },
+    {
+      "id": 2,
+      "name": "Open Space",
+      "description": "A bright, flexible drop-in area with shared long tables. Great for light studying or working alongside others.",
+      "capacity": 20,
+      "price_per_session": 120,
+      "amenities": ["WiFi", "Power outlets", "AC", "Natural lighting"],
+      "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600"
+    },
+    {
+      "id": 3,
+      "name": "Group Study Room",
+      "description": "A dedicated room for study groups and team sessions. Comfortable seating for up to 8 people with collaboration tools.",
+      "capacity": 8,
+      "price_per_session": 200,
+      "amenities": ["WiFi", "Whiteboard", "Power outlets", "AC", "Round table"],
+      "image": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=600"
+    },
+    {
+      "id": 4,
+      "name": "Lounge Area",
+      "description": "Kick back and study in comfort. Cozy sofas and low tables make this perfect for reading, light work, or unwinding between sessions.",
+      "capacity": 10,
+      "price_per_session": 300,
+      "amenities": ["WiFi", "Cozy seating", "AC", "Ambient lighting"],
+      "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600"
+    },
+    {
+      "id": 5,
+      "name": "VIP Room",
+      "description": "Our premium private room. Fully equipped for presentations, intensive group work, or anyone who wants the best experience Nook & Brew has to offer.",
+      "capacity": 6,
+      "price_per_session": 600,
+      "amenities": ["WiFi", "Large monitor", "Whiteboard", "Power outlets", "AC", "Private entrance"],
+      "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600"
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "name": "Water",
+      "description": "Still mineral water, served chilled.",
+      "category": "drink",
+      "price": 50,
+      "image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600"
+    },
+    {
+      "id": 2,
+      "name": "Soda",
+      "description": "Choice of Coke, Fanta, or Sprite. Ice cold and refreshing.",
+      "category": "drink",
+      "price": 80,
+      "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=600"
+    },
+    {
+      "id": 3,
+      "name": "Fruit Juice",
+      "description": "Freshly blended juice of the day. Ask our staff for today's flavour.",
+      "category": "drink",
+      "price": 120,
+      "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=600"
+    },
+    {
+      "id": 4,
+      "name": "Tea",
+      "description": "Classic Kenyan tea, brewed with milk, tea leaves and spices (optional).",
+      "category": "drink",
+      "price": 80,
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600"
+    },
+    {
+      "id": 5,
+      "name": "Black Coffee",
+      "description": "Freshly brewed black coffee to keep you sharp.",
+      "category": "drink",
+      "price": 120,
+      "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=600"
+    },
+    {
+      "id": 6,
+      "name": "Cappuccino",
+      "description": "Espresso topped with steamed milk and a thick layer of foam.",
+      "category": "drink",
+      "price": 250,
+      "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600"
+    },
+    {
+      "id": 7,
+      "name": "Flavoured Milk",
+      "description": "Choice of chocolate, strawberry, or vanilla.",
+      "category": "drink",
+      "price": 90,
+      "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600"
+    },
+    {
+      "id": 8,
+      "name": "Muffin",
+      "description": "Soft, fluffy muffin that is freshly baked.",
+      "category": "snack",
+      "price": 50,
+      "image": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=600"
+    },
+    {
+      "id": 9,
+      "name": "Cinnamon Roll",
+      "description": "Warm, fresh cinnamon roll.",
+      "category": "snack",
+      "price": 150,
+      "image": "https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=600"
+    },
+    {
+      "id": 10,
+      "name": "Mandazi",
+      "description": "Soft and lightly sweetened pack of 3. Best enjoyed with tea.",
+      "category": "snack",
+      "price": 60,
+      "image": "https://images.unsplash.com/photo-1574085733277-851d9d856a3a?w=600"
+    },
+    {
+      "id": 11,
+      "name": "Samosa",
+      "description": "Crispy pastry filled with spiced minced meat.",
+      "category": "snack",
+      "price": 40,
+      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600"
+    },
+    {
+      "id": 12,
+      "name": "Toast",
+      "description": "Thick slices of toasted bread served with butter and jam on the side. Served in a 4 slice portion",
+      "category": "snack",
+      "price": 50,
+      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600"
+    },
+    {
+      "id": 13,
+      "name": "Sandwich",
+      "description": "Freshly made sandwich with your choice of meat or veggie filling.",
+      "category": "snack",
+      "price": 250,
+      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600"
+    },
+    {
+      "id": 14,
+      "name": "Cookies",
+      "description": "Homestyle baked cookies. Chocolate chip or oatmeal raisin — both made in house.",
+      "category": "snack",
+      "price": 80,
+      "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600"
+    },
+    {
+      "id": 15,
+      "name": "Banana",
+      "description": "Fresh ripe banana.",
+      "category": "fruit",
+      "price": 20,
+      "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=600"
+    },
+    {
+      "id": 16,
+      "name": "Apple",
+      "description": "Red or green refreshing fruit",
+      "category": "fruit",
+      "price": 40,
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=600"
+    },
+    {
+      "id": 17,
+      "name": "Orange",
+      "description": "Sweet, juicy orange. Peel and enjoy or ask us to juice it for you.",
+      "category": "fruit",
+      "price": 20,
+      "image": "https://images.unsplash.com/photo-1547514701-42782101795e?w=600"
+    }
+  ]
+}
