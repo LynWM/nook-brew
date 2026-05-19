@@ -7,7 +7,7 @@ export default function Menu () {
   const [searchQuery, setSearchQuery] = useState('')
 
   useEffect(() => {
-    fetch('http://localhost:3000/menu')
+    fetch(`${import.meta.env.VITE_API_URL}/menu`)
       .then(res => res.json())
       .then(data => setMenuItems(data))
       .catch(err => console.error('Error fetching menu:', err))

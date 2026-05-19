@@ -30,7 +30,7 @@ export default function Admin () {
       price_per_hour: Number(roomForm.price_per_hour),
       amenities: roomForm.amenities.split(',').map(a => a.trim()),
     }
-    fetch('http://localhost:3000/rooms', {
+    fetch(`${import.meta.env.VITE_API_URL}/posts`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newRoom),
@@ -44,7 +44,7 @@ export default function Admin () {
   function handleMenuSubmit(e) {
     e.preventDefault()
     const newItem = { ...menuForm, price: Number(menuForm.price) }
-    fetch('http://localhost:3000/menu', {
+    fetch(`${import.meta.env.VITE_API_URL}/menu`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newItem),

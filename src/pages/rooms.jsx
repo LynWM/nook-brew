@@ -8,7 +8,7 @@ export default function Rooms () {
   const [searchQuery, setSearchQuery] = useState('')
 
   useEffect(() => {
-    fetch('http://localhost:3000/rooms')
+    fetch('`${import.meta.env.VITE_API_URL}/rooms')
       .then(res => res.json())
       .then(data => setRooms(data))
       .catch(err => console.error('Error fetching rooms:', err))
