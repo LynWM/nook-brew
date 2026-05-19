@@ -46,7 +46,7 @@ export default function RoomCard ({ room }) {
               backgroundColor: booked ? '#f5cbd7' : '#A65B71',
               color: booked ? '#442f2a' : '#fff7ec',
             }}
-            className="px-5 py-2 rounded-2xl text-sm font-medium transition-all"
+            className="px-5 py-2 rounded-2xl text-sm cursor-pointer hover:opacity-90 font-medium transition-all"
           >
             {booked ? <><Check size={16} /> Booked</> : 'Book Now'}
           </button>
