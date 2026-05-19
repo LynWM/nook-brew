@@ -30,7 +30,7 @@ export default function Admin () {
       price_per_hour: Number(roomForm.price_per_hour),
       amenities: roomForm.amenities.split(',').map(a => a.trim()),
     }
-    fetch(`${import.meta.env.VITE_API_URL}/posts`, {
+    fetch(`${import.meta.env.VITE_API_URL}/rooms`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newRoom),
