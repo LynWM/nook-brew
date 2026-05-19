@@ -6,7 +6,7 @@ const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 const PORT = process.env.PORT || 3001;
 
-server.use(cors({ origin: '*' }));
+server.use(cors({ origin: 'https://nook-brew.vercel.app/' }));
 server.use(middlewares);
 server.use(router);
 
