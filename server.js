@@ -1,14 +1,12 @@
-const jsonServer = ('json-server');
-const cors = ('cors');
+import jsonServer from 'json-server';
+import cors from 'cors';
 
 const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 const PORT = process.env.PORT || 3001;
 
-server.use(cors({
-  origin: '*' // tighten this to your Vercel URL after deployment
-}));
+server.use(cors({ origin: '*' }));
 server.use(middlewares);
 server.use(router);
 
