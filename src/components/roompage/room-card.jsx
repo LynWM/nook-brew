@@ -1,7 +1,10 @@
-import { Users } from "lucide-react"
+import { Check, Users } from "lucide-react"
+import { useState } from "react"
 import React from "react"
 
 export default function RoomCard ({ room }) {
+  const [booked, setBooked] = useState(false)
+
   return (
     <div
       style={{ border: '1.5px solid #f5cbd7', backgroundColor: '#fff7ec' }}
@@ -15,7 +18,7 @@ export default function RoomCard ({ room }) {
         </h3>
         <p className="text-gray-500 text-sm mb-3">{room.description}</p>
 
-        <p className="text-sm mb-3" style={{ color: '#A65B71' }}>
+        <p className="text-sm mb-3 flex items-center gap-1" style={{ color: '#A65B71' }}>
           <Users size={18} /> Up to {room.capacity} {room.capacity === 1 ? 'person' : 'people'}
         </p>
 
@@ -33,17 +36,22 @@ export default function RoomCard ({ room }) {
 
         <div className="flex items-center justify-between">
           <p style={{ color: '#442f2a' }} className="font-semibold">
-            KES {room.price_per_session}<span className="text-sm font-normal text-gray-400"> / session(3 hours)</span>
+            KES {room.price_per_session}
+            <span className="text-sm font-normal text-gray-400"> / session (3 hrs)</span>
           </p>
           <button
-            style={{ backgroundColor: '#A65B71', color: '#fff7ec' }}
-            className="px-5 py-2 rounded-2xl text-sm font-medium hover:opacity-90 transition-opacity"
+            onClick={() => setBooked(true)}
+            disabled={booked}
+            style={{
+              backgroundColor: booked ? '#f5cbd7' : '#A65B71',
+              color: booked ? '#442f2a' : '#fff7ec',
+            }}
+            className="px-5 py-2 rounded-2xl text-sm font-medium transition-all"
           >
-            Book Now
+            {booked ? <><Check size={16} /> Booked</> : 'Book Now'}
           </button>
         </div>
       </div>
     </div>
   )
 }
-
